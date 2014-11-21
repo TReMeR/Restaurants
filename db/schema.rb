@@ -27,11 +27,9 @@ ActiveRecord::Schema.define(version: 20141119174758) do
     t.string   "title"
     t.string   "author"
     t.text     "description"
-    t.string   "amazon_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "rating"
-    t.date     "finished_on"
     t.text     "keywords"
   end
 
