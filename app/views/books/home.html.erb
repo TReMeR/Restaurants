@@ -1,19 +1,28 @@
-<div class="row" style="padding-top:30px;">
-    <div class="col-md-3">
-      <h1><%= link_to image_tag('logo.jpg'), books_path %></h1>
-    </div>
-       
-    <div class="col-md-9">
-      <div class="btn-group pull-right">
-  	  <button type="button" class="btn btn-primary active">Home</button>
-     	  <button type="button" class="btn btn-primary active">Services</button>
-	  <button type="button" class="btn btn-primary active">About Us</button>
-      	  <button type="button" class="btn btn-primary active">FAQ</button>
-      	  <button type="button" class="btn btn-primary active">Contact Us</button>
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to "Вилка.ком.юа", root_path, class: "navbar-brand" %>
+          <%= link_to "Список заведений", books_path, class: "navbar-brand" %>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
       </div>
-    </div>
-</div>
-
+    </nav>
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -28,9 +37,9 @@
           <%= image_tag('jumbotron1.jpg') %>
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>Все заведения Киева</h1>
+              <p>Нет свободных столиков? Забудьте об этом! Бронируйте места в лучших заведениях города только на Вилка.ком.юа!</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Забронировать Столик</a></p>
             </div>
           </div>
         </div>
